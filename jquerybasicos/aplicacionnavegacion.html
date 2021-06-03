@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+     <meta charset="UTF-8">
+      <title>Aplicación de navegación</title>
+     <link rel="stylesheet" href="css/min.css">
+</head>
+<body>
+
+    <nav>
+<!--menu normal-->
+      <ul> 
+        <li> <a href="#" data-page="home">Home</a></li>
+        <li> <a href="#" data-page="downloads">Downloads</a></li>
+        <li> <a href="#" data-page="tutorials"> Tutorials</a></li>
+
+       </ul> 
+    </nav>
+ <section id="main"></section>
+
+<!--instalacion jquery-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+<script>
+   
+      var app= {
+         nav: $('nav ul li a'),
+         content : $('section#main')
+
+      };
+
+      app.putContent  = function(content){
+         this.content.html(content);
+
+
+      }
+
+     app.loadPage = function(page){
+         $.ajax({
+             url:'page.php',
+            type: 'get',
+            cache: true,
+            data: {page: page},
+            sucess: function(data) {
+               app.putContent(data);
+
+            },
+            error :function() {
+            app.putContent(' we could not find that page.');
+            }
+         });
+
+
+     }
+     app.init = function(){
+      app.nav.on('click',function() {
+       //   console.log('Clicked.');
+      var page =$(this).data('page');
+//esta linea que dice data es la que esta en la lista el page es el contenido del data-page
+        //console.log(page);
+      app.loadPage(page);
+
+     });
+}();
+</script>
+</body>
+  
+
+
+
+</html>

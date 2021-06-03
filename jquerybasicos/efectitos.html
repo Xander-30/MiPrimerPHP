@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+     <meta charset="UTF-8">
+      <title>obtener contenido y atributos</title>
+
+ <!--instalacion jquery-->
+<script type="text/javascript" src="jquery/jquery-3.2.0 (2).js" ></script>
+
+<script type="text/javascript">
+
+//carga la libreria jquery
+$(document).ready(function() {
+
+
+//cuando la pagina web carge 
+//el elemento parrafo se ocultara.
+   $("#output").hide();
+
+
+
+//registro de eventos oyentes
+  $("#button_01").click(function(){
+      $("#output").show(3000,function(){
+         alert("el efecto de mostrar ha sido completado");
+  });
+ }); 
+
+ $("#button_02").click(function(){
+     $("#output").hide(3000,function(){
+         alert("el efecto de ocultar ha sido completado")
+     });
+
+  });
+
+ $("#button_03").click(function(){
+       $("#output").toggle(3000,function(){
+          alert(" el efecto toogle ha sido finalizado");
+       });
+
+  });
+
+});
+
+</script>
+ 
+</head>
+<body>
+
+  <input type="button" id="button_01"  value="Show">
+  <input type="button" id="button_02"  value="Hide">
+  <input type="button" id="button_03"  value="Toogle">
+
+
+ <p id ="output">este es el contenido del parrafo </p>
+ 
+
+
+
+
+</body>
+</html>

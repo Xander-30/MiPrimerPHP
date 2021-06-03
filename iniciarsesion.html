@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Biblioteca web">
+<meta name="keywords" content="HTML5, CSS3, JavaScript">
+
+ <head>
+  <title>Ingreso</title>
+
+
+
+
+
+
+
+
+   <style type= "text/css">
+     #caja{
+   
+      background:#cfd8dc;
+      width: 420px;
+      height: 220px;
+      border: 10px solid #000000;
+      margin:200px auto;
+      padding:10px;
+   }
+     
+input[type="submit"]{
+padding:5px 15px;
+    /*font-size:10px;/*ponerle tamaño a la letra*/
+border: 1px solid #aaa;/*Para ponerle un border de color al botton;*/
+border-radius:3px;
+font-size:1em;
+font-weight:bold;
+width:130px;
+height:30px;
+
+}
+
+
+
+input[type="reset"]{
+width:130px;
+height:30px;
+padding:5px 15px;
+    /*font-size:10px;/*ponerle tamaño a la letra*/
+border: 1px solid #aaa;/*Para ponerle un border de color al botton;*/
+border-radius:3px;
+font-size:1em;
+font-weight:bold;
+
+}
+   </style>
+</head>
+
+ <body>  
+  <div id="caja">       
+
+                 
+                 
+<H1> <CENTER>ACCESO </CENTER > </H1> 
+
+<a href= iniciarsesion.html> <img src="http://blog.descubriendoandroid.com/wp-content/uploads/2013/05/copia-de-seguridad.jpg" align= right width=140  height=130; > </img src ></a>
+
+
+<form method="Post" action="login.php"><br>
+
+  
+ 
+  <label for="n_usuario">Usuario: </label>
+  <input type="text"name="n_usuario" id="n_usuario"required autofocus placeholder="Tu usuario es" pattern="[a-zA-Z]{3,}" title="Por favor ingrese mas de tres letras"/> <br><p/> 
+  <label for="pwd">Contraseña</label>
+  <input type="password" name="pwd" id="pwd" required  placeholder="Tu contraseña es"title="Por favor ingrese su contraseña"/> <br><p/> 
+ <input style="color: #fafafa; background-color:#37474f" value="Iniciar Sesion" name="button" type="submit"/>
+<input style="color: #fafafa;background-color:#3456ad" value="Salir" type="reset"/>
+
+ 
+
+<input name="button" type="button" onclick="window.close();" value="Cerrar " /> 
+
+<script>
+var p= confirm('deseas ingresar al sistema');
+
+
+
+console.log(p);
+</script>
+
+
+<!--<h1>What Can JavaScript Do?</h1>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>-->
+
+
+
+
+
+
+
+</form>
+
+
+</form>
+</div>
+ </body>
+ </html>
+
+
+    
+    
+     
+
+
+

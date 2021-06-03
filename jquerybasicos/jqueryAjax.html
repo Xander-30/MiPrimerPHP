@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+     <meta charset="UTF-8">
+      <title>jquery css function</title>
+
+     <style>
+         #btn_get_data
+         {
+
+           width: 250px;
+           height:100px;
+         }
+     </style>
+
+ <!--instalacion jquery-->
+<script type="text/javascript" src="jquery/jquery-3.2.0 (2).js" ></script>
+
+<script type="text/javascript">
+
+//carga la libreria jquery
+$(document).ready(function() 
+{
+
+setInterval("get_live_feed()",1000);
+
+   $("#btn_get_data").click(function()
+   {
+  
+   //recupera el contenido desde data.html
+   //desde un elemento con el 
+  // my_p1.
+ //$("#p1").load("data2.html #my_p1");
+
+    
+   /** 
+   $.ajax(
+    {
+    type:"GET", // el tipo de solicitud para enviar al servidor.
+    dataType: "json", // retorna el dato desde el servidor como json.
+     url: "data.json", // El url enviar la solicitud al servidor.
+    success:function(response)
+  {
+     var names="";
+     for(var i =0; i < response.Person.length; i++)
+     {
+       names += response.Person[i].firstName + " " + response.Person[i].lastName +"br>";
+
+     } // end of for-loop
+     $("#p1").html(names);
+      }   //salida de la funcion
+    });  //final de la funcion ajax
+**/
+
+  });    //final del boton click
+});   //final de leida la funcion 
+
+//obtiene la actualizacion de la busqueda de la lista
+function get_live_feed()
+{
+
+
+  $.ajax(
+{
+   type:"GET",// el tipo de solicitud al enviar al servidor
+   dataType:"json",// retorna los datos del json
+   url:"data.json",// la direccion que envia la solicitud del servidor
+   success: function(response)
+   {
+     var names="";
+     for (var i= 0;  i <response.Person.length; i++)
+      {
+        names += response.Person[i].firstName +" "+ response.Person[i].lastName + "<br>";
+
+       }      
+     $("#p1").html(names);
+
+     }  //final de la funcion
+
+   }); //final del la funcion ajax
+
+ }  //final of get_live_feed
+ 
+
+
+
+
+
+
+
+</script>
+ 
+</head>
+<body>
+   <input type="button"  id="btn_get_data" value= "insertar ">
+   <p id="p1"></p>
+
+
+
+
+</body>
+</html>

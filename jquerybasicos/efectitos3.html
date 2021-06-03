@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+     <meta charset="UTF-8">
+      <title>efectos 3</title>
+
+ <!--instalacion jquery-->
+<script type="text/javascript" src="jquery/jquery-3.2.0 (2).js" ></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+//registra un evento llamado
+
+   $("#slideUp").click(function(){
+     $("#output").slideUp(5000,function(){
+        alert("el efecto slideUp esta ahora completado");
+  });
+
+});
+
+   $("#slideDown").click(function(){
+
+     $("#output").slideDown( 5000, function(){
+     	alert("el efecto slideDown ha sido completado");
+  });
+
+});
+
+
+$("#slideToggle").click(function(){
+
+  $("#output").slideToggle( 5000, function(){
+
+  	  alert("el efecto slideToggle ha sido completado");
+     });
+
+
+   });
+
+});
+
+</script>
+ 
+</head>
+<body>
+
+  <input type="button" id="slideUp"  value="Slide Up">
+  <input type="button" id="slideDown"  value="Slide Down">
+  <input type="button" id="slideToggle"  value="Slide Toggle">
+
+
+ <p id ="output"> este es el contenido para el efecto fade</p>
+ 
+
+
+
+
+</body>
+</html>

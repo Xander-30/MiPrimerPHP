@@ -1,0 +1,107 @@
+Alejandro33**
+
+worflown
+gep_mensaje.jsp---  falta revisar
+gcp_consulta_IR.jsp**--
+gcf_consulta_IR.jsp**--
+gcp_SRI_blank.jsp**---
+gcp_consulta_IR_mes.jsp**--
+gcp_SRI_calculo_IR.jsp**
+gcp_consulta_IR_detalle1.jsp**--
+gcp_consulta_impuestos_2.jsp**--
+gcp_SRI_Informativo.jsp**---
+gcp_consulta_impuestos_1.jsp**---
+gcp_consulta_IR_detalle_xls.jsp**--
+gcp_consulta_IR_detalle2.jsp**---
+gcp_consulta_impuestos_3.jsp**---
+gcp_consulta_impuestos_4.jsp--
+gcp_SRI_Contenido_inf.jsp**--
+gcp_consulta_IR_detalle3.jsp**--
+gcp_consulta_IR_detalle4.jsp**---
+gcp_consulta_IR_detalle3_xls.jsp--
+gcp_consulta_IR_detalle4_xls.jsp--
+gcp_consulta_IR_detalle2_xls.jsp--
+ya voy a corregir pra terminar esto
+gcf_vac_ing_planificacion.jsp
+5211 linea me quede de query seguridades--
+
+Alejandro33**
+H3rr3ra_20/*
+H3rr3ra_20/*
+
+tienes la ruta del 119 
+el servidor?
+si
+te las pase en tu spark
+
+ya ahora puedes trabjare mas rapido ok
+
+conectate para istalarte el tns 
+adonde en mi plsq
+
+
+call GCK_TRX_PLANIFICACION_VAC.VALIDA_USUARIO_APLI
+
+
+
+https://www.facebook.com/jaime.murillo.334?epa=SEARCH_BOX(eliminar face)
+
+Buenas Tardes,
+
+ 
+
+Por favor su ayuda instalando la VPN de Corlasosa en las máquinas de sus hogares. Con esto lograremos que al activar la VPN sus máquinas tengan el acceso como si estuvieran en la red de Corlasosa.
+
+ 
+
+ 
+
+Estos son los pasos para la instalación de la VPN:
+
+Entrar a la URL:   https://190.57.130.50:1024/
+
+ 
+
+Digitar su usuario y contraseña:
+
+ 
+
+USUARIO            cls.asesores
+
+CLAVE:               As3sor3s20/*
+
+ 
+
+Descargar el aplicativo e instalar:
+
+
+
+
+Estado HTTP 404 - /wfemp/paginas/gestioncliente/vacacion_pla_JCHICALA.xls
+
+--------------------------------------------------------------------------------
+
+type Informe de estado
+
+mensaje /wfemp/paginas/gestioncliente/vacacion_pla_JCHICALA.xls
+
+descripción El recurso requerido (/wfemp/paginas/gestioncliente/vacacion_pla_JCHICALA.xls) no está disponible.
+
+
+--------------------------------------------------------------------------------
+
+Apache Tomcat/5.5.33
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+     <meta charset="UTF-8">
+      <title>eventos jquery</title>
+
+ <!--instalacion jquery-->
+<script type="text/javascript" src="jquery/jquery-3.2.0 (2).js" ></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+
+
+$("#div_01").click(function(){
+  $("#output").html("el div ha sido  clickeado");
+  });
+
+//var my_jquery_object =$("#output");
+//var my_object= document.getElementById("output"):
+
+
+
+$("#div_01").dblclick(function(){
+   $("#output").html("el div ha sido dos veces clickeado");
+  });
+
+$("#div_01").mouseenter(function(){
+   $("#output").html("tu estas ahora dentro del elemento div");
+  });
+
+$("#div_01").mouseleave(function(){
+   $("#output").html("tu estas saliendo del elemento div");
+  });
+
+$("#my_textbox").focus(function(){
+   $("#output").html("tu textbox ha sido ganado.");
+  });
+
+
+
+
+
+});
+
+
+
+
+</script>
+ 
+</head>
+<body>
+
+  <div id="div_01"> este es mi primer div</di>
+
+ <p id="output"> </p>
+  <input type=" text"  id="my_textbox">
+
+
+</body>
+</html>

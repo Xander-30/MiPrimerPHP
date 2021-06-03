@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+     <meta charset="UTF-8">
+      <title>obtener contenido y atributos</title>
+
+ <!--instalacion jquery-->
+<script type="text/javascript" src="jquery/jquery-3.2.0 (2).js" ></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+//esto puede retornar el texto del elemento seleccionado.
+
+$("#button_01").click(function()
+{
+  $("#output").text("Me has puesto a valorar");
+  });
+
+//esto retorna un html
+//de el elemento seleccionado.
+
+$("#button_02").click(function()
+{
+
+  $("#output").html( "<p>Este es el primer parrafo .</p><p>este es el segundo " )
+});
+
+//esto retorna el valor 
+//de los elementos seleccionados.
+
+$("#button_03").click(function()
+{
+
+  $("#my_text_box").val( " Gracias por el nuevo texto" )
+});
+
+
+});
+
+</script>
+ 
+</head>
+<body>
+
+  <input type="button" id="button_01"  value="button 01">
+  <input type="button" id="button_02"  value="button 02">
+  <input type="button" id="button_03"  value="button 03">
+
+
+ <p id ="output"> </p>
+ <input type="text"  id="my_text_box">
+
+
+
+
+</body>
+</html>

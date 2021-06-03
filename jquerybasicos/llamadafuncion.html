@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+     <meta charset="UTF-8">
+      <title>llamadas funciones jquery</title>
+
+ <!--instalacion jquery-->
+<script type="text/javascript" src="jquery/jquery-3.2.0 (2).js" ></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+
+//esto puede ocultar el texto del elemento seleccionado.
+
+$("#output").hide(6000, function(){
+    alert("el efecto de ocultar ha finalizado.")
+  });
+
+//esto regresa el menssje de la accion que se esta ocultando mediante la velocidad que son los numeros entre los parentesis.
+
+
+$("#button").click(function(){
+
+  $("#output").toggle(1000, function(){
+      alert("Efecto de conmutación ha finalizado.");
+  });
+
+
+});  //fin de la funcion
+
+
+
+
+
+
+
+
+});//fin de la funcion lista
+
+</script>
+ 
+</head>
+<body>
+
+
+
+
+
+  <input type="button" id="button"  value="Toggle">
+  <p id="output"> Este contenido esta desapareciendo.</p>
+
+
+ 
+
+
+</body>
+</html>

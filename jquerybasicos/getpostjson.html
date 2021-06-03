@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+     <meta charset="UTF-8">
+      <title>get y post json</title>
+</head>
+<body>
+
+ <!--instalacion jquery-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+<script>
+   
+      $.ajax({
+        url: 'file.php',
+        type: 'POST',
+        data: {name:'Alex'},
+        success: function(data) {
+          
+          console.log(data);
+          }
+
+      
+     });
+</script>
+</body>
+  
+
+
+
+</html>

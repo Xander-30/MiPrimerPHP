@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+     <meta charset="UTF-8">
+      <title>efectos 2</title>
+
+ <!--instalacion jquery-->
+<script type="text/javascript" src="jquery/jquery-3.2.0 (2).js" ></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+//registra un evento llamado
+
+   $("#fadeToggle").click(function(){
+     $("#output").fadeToggle(5000,function(){
+        alert("el efecto fadetoggle esta ahora completado");
+  });
+
+});
+
+   $("#fadeIn").click(function(){
+
+     $("#output").fadeIn( 5000, function(){
+     	alert("el efecto fadeIn ha sido completado");
+  });
+
+});
+
+
+$("#fadeOut").click(function(){
+
+  $("#output").fadeOut( 5000, function(){
+
+  	  alert("el efecto fadeOut ha sido completado");
+});
+
+
+});
+
+});
+
+</script>
+ 
+</head>
+<body>
+
+  <input type="button" id="fadeToggle"  value="fade toggle">
+  <input type="button" id="fadeIn"  value="fade in">
+  <input type="button" id="fadeOut"  value="fade out">
+
+
+ <p id ="output"> este es el contenido para el efecto fade</p>
+ 
+
+
+
+
+</body>
+</html>

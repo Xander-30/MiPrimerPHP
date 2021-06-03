@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+     <meta charset="UTF-8">
+      <title>jQuery AJAX interaccion usuario</title>
+</head>
+<body>
+
+<a href="#" id="load">Muestra mi archivo de contenido</a>
+<div id="contents" ></div>
+
+
+
+ <!--instalacion jquery-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+<script>
+   $('#load').on('click', function(){
+      var contents =$('#contents');
+      setInterval(function(){  //cuenta la secuencia en que se esta haciendo la llamada.
+          console.log('1 second.');
+      }, 1000);
+
+      $.ajax({
+        url: 'texto.txt',
+        cache: false, //me limpia la memoria del cache. y me actualiza.
+
+        success: function(data) {
+             contents.text(data);
+          },
+          error: function() {
+          console.log('algo salió mal')
+          }
+
+        });
+     });
+</script>
+</body>
+  
+
+
+
+</html>

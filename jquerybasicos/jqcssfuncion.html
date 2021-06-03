@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+     <meta charset="UTF-8">
+      <title>jquery css function</title>
+     <style>
+         p{
+            background-color :blue;
+            color: white;
+            font-size :20pt;
+            padding: 10px;
+         }
+     </style>
+
+ <!--instalacion jquery-->
+<script type="text/javascript" src="jquery/jquery-3.2.0 (2).js" ></script>
+
+<script type="text/javascript">
+
+//carga la libreria jquery
+$(document).ready(function() {
+
+//obtener el valor de la propiedad css de background-color
+   $("#p1").click(function(){
+  //poner un solo color a todos los background
+ $("p").css("background-color" ,"pink");
+
+    //$("#p1").html($("#p1").css("background-color"         ));
+
+   });
+
+//poner el la propiedad css background-color a verde
+$("#p2").click(function(){
+  $("#p2").css("background-color" ,"green");
+
+   });
+
+//poner multiples propiedades css
+
+$("#p3").click(function(){
+  $("#p3").css({"background-color" :"red", "font-size": "30pt", "color": "yellow"});
+
+   });
+
+//poner los valores del css
+$("#p4").click(function(){
+    var background_color= $("#p4").css("background-color");
+    var color = $("#p4").css("color");
+    var font_size= $("#p4").css("font-size");
+    var padding =$("#p4").css("padding");
+    var the_output = "css Properties:" + "<p>" + "background-color = "  + background_color + "<br>";
+    the_output+= "color =" + color + "<br>";
+    the_output+= "font_size= "+ font_size + "<br>";
+   $("#p4").html(the_output);
+
+  });
+
+});
+
+</script>
+ 
+</head>
+<body>
+
+  <p id="p1"> Parrafo 1 </p>
+  <p id="p2"> Parrafo 2 </p>
+  <p id="p3"> Parrafo 3 </p>
+  <p id="p4"> Parrafo 4 </p>
+ 
+
+
+
+
+</body>
+</html>

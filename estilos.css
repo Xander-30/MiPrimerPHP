@@ -1,0 +1,19 @@
+*{
+	border:0;
+	margin:0;
+}
+body{
+   background-image: url(../imagenes/fondo.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+ 
+ #navegacion{
+    background-color: #802c42; 
+    width: 980px; 
+    height: 20px;
+    margin: auto;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius: 15px;
+    padding: 15px;
+ }

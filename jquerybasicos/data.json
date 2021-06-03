@@ -1,0 +1,16 @@
+
+//archivo json ejemplo:
+{"Person":
+ [
+
+    {"firstName" : "Jhon", "lastName":"Doe"},
+    {"firstName" : "Ana" , "lastName":"Smith"},
+    {"firstName" : "Peter" , "lastName":"Jones"},         
+    {"firstName" : "Victor" , "lastName":"Davis"},
+    {"firstName" : "Jaddian", "lastName":"Forte"},     
+    {"firstName" : "Steve", "lastName":"Beiker"},
+    {"firstName" : "Alexander", "lastName":"Herrera"} 
+ 
+
+ ]
+}
